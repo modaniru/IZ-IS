@@ -1,38 +1,87 @@
-.App {
+body{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  background: rgb(90,131,174);
+background: linear-gradient(90deg, rgba(90,131,174,1) 0%, rgba(52,69,156,1) 100%);
+}
+
+.name{
+  color: white;
+  font-weight: 700;
+  font-size: 64px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.is-name{
+  color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body{
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.question-container{
+  background-color: #ffffffa0;
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  
+}
+
+.qimage{
+  background-position: center;
+  background-size:cover;
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 12px;
+}
+
+.question{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.question1{
+  font-size: 20px;
+  font-weight: 200;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+
+
+}
+
+.button {
+  width: 400px;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 4px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.button:hover {
+  background-color: #f2f2f2; /* измените цвет на ваш выбор */
+}
+
+.cont{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.restart{
+  margin-left: 310px;
+  color: #ff3333;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: underline;
 }
